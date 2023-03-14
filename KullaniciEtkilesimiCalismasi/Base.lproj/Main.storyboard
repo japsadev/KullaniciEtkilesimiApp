@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KullaniciEtkilesimiCalismasi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rNj-jn-Dy9">
+                                <rect key="frame" x="117.66666666666669" y="269" width="158" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Basit Alert Göster"/>
+                                <connections>
+                                    <action selector="basitAlertGoster:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Jm-In-V2O"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HVV-n4-7sK">
+                                <rect key="frame" x="108" y="461" width="177" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Action Sheet Göster"/>
+                                <connections>
+                                    <action selector="actionSheetGoster:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BW7-zs-ih5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDh-e5-2pW">
+                                <rect key="frame" x="119" y="356" width="155" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Özel Alert Göster"/>
+                                <connections>
+                                    <action selector="ozelAlertGoster:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EWe-ml-5jR"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7i-Ow-zUP">
+                                <rect key="frame" x="169" y="161" width="55" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rNj-jn-Dy9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5IC-Fo-hMc"/>
+                            <constraint firstItem="KDh-e5-2pW" firstAttribute="top" secondItem="rNj-jn-Dy9" secondAttribute="bottom" constant="52" id="9Jb-7K-ERj"/>
+                            <constraint firstItem="rNj-jn-Dy9" firstAttribute="top" secondItem="d7i-Ow-zUP" secondAttribute="bottom" constant="80" id="BJy-sV-QJJ"/>
+                            <constraint firstItem="KDh-e5-2pW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D6p-Ml-6dV"/>
+                            <constraint firstItem="d7i-Ow-zUP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="102" id="Tay-EQ-abs"/>
+                            <constraint firstItem="HVV-n4-7sK" firstAttribute="top" secondItem="KDh-e5-2pW" secondAttribute="bottom" constant="70" id="UJ1-xJ-3z9"/>
+                            <constraint firstItem="HVV-n4-7sK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e92-W2-xvC"/>
+                            <constraint firstItem="d7i-Ow-zUP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sWP-Je-1Qb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelSonuc" destination="d7i-Ow-zUP" id="fOo-ig-C6c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="102" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
